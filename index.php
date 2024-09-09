@@ -1,22 +1,36 @@
-<?php
-  // Datos de conexión
-  $host = "b8ihynb9x0naoa4fbfmz-postgresql.services.clever-cloud.com";
-  $database = "b8ihynb9x0naoa4fbfmz";
-  $user = "u6ibxgixjae0dmywjcxe";
-  $password = "P9rnvsnZT4yfdKCMifwbUbdmiIsTaJ";
-  $port = "50013";
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página HTML Simple</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
 
-  // Conectar a PostgreSQL
-  $connection = pg_connect("host=$host dbname=$database user=$user password=$password port=$port");
+    <h1>Bienvenido a mi página web</h1>
+    <p>Esta es una página HTML simple creada como ejemplo. Puedes modificar este contenido según tus necesidades.</p>
+    <p>Para más información, visita <a href="https://www.ejemplo.com" target="_blank">este enlace</a>.</p>
 
-  // Verificar conexión
-  if (!$connection) {
-    echo "Error: No se pudo conectar a PostgreSQL.\n";
-  } else {
-    echo "Conexión exitosa a PostgreSQL.\n";
-  }
-echo "Sombreros de paja";
-
-  // Cerrar conexión
-  pg_close($connection);
-?>
+</body>
+</html>
